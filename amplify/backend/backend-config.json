@@ -1,1 +1,10 @@
-{}
+{
+	"auth": {
+		"amplifyplayground6aeec9db": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}
