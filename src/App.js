@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { Storage } from 'aws-amplify';
 
 import { fetchNotes, createNote, deleteNote } from './api';
 import NoteItem from './components/NoteItem';
@@ -30,6 +31,16 @@ function App() {
     setNotes(newNotesArray);
   }
 
+  const onChange = async (e) => {
+    if (!e.target.files[0]) return
+    const file = e.target.files[0];
+
+    await Storage.put(file.name, file);
+    await fetchNotes();
+
+    setFormData({ ...formData, image: file.name });
+  }
+
   const noteList = notes.map(note => (
     <NoteItem
       key={note.id}
@@ -41,6 +52,10 @@ function App() {
   return (
     <div className="App">
       <h1>My Notes App</h1>
+      <input
+        type="file"
+        onChange={onChange}
+      />
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value })}
         placeholder="Note name"
