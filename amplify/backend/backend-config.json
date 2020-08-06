@@ -26,7 +26,7 @@
 		}
 	},
 	"storage": {
-		"imagestorage": {
+		"s3ab1d0f14": {
 			"service": "S3",
 			"providerPlugin": "awscloudformation"
 		}
