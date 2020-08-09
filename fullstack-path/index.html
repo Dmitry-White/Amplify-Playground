@@ -4,10 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Hello World</title>
+  <!-- Add some CSS to change client UI -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  Hello World
+  <form>
+    <label>First Name :</label>
+    <input type="text" id="fName">
+    <label>Last Name :</label>
+    <input type="text" id="lName">
+    <!-- set button onClick method to call function we defined passing input values as parameters -->
+    <button id="api-button" type="button">Call API</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
