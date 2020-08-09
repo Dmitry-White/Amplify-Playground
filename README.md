@@ -4,7 +4,14 @@
 
 https://aws.amazon.com/getting-started/learning-path-front-end-developer/
 
-[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/Dmitry-White/Amplify-Playground)
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/Dmitry-White/Amplify-Playground/tree/master/frontend-path)
+
+## Learning Path: Full-Stack Developer
+
+https://aws.amazon.com/getting-started/learning-path-full-stack-developer/
+
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/Dmitry-White/Amplify-Playground/tree/master/fullstack-path)
+
 
 ### Useful Links:
 
